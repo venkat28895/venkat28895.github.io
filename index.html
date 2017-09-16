@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IGNITE - A National Level Coding Competition</title>
+  <meta name="description" content="Full screen background video demo">
+  <meta name="author" description="Call Me Nick">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+</head>
+<body>
+  
+<div class="content">
+  <img src="logo_11.png" id="logo"/>
+  <h2 style="color:white;font-family: 'Aldrich', sans-serif;">2018 Spark's Coming Soon.</br> Stay Tuned for More Updates</h2>
+  <center><p style="color:white;font-family: 'Aldrich', sans-serif;">LookAt-&nbsp;<a target="_blank" href="2017/index.php" style="color:yellow;text-decoration:none;"> Spark'17</a></p></center>
+</div><!-- /content -->
+
+<video id="my-video" class="video" loop>
+  <source src="spark1.mp4" type="video/mp4">
+
+</video><!-- /video -->
+<script>
+(function() {
+  /**
+   * Video element
+   * @type {HTMLElement}
+   */
+  var video = document.getElementById("my-video");
+
+  /**
+   * Check if video can play, and play it
+   */
+  video.addEventListener( "canplay", function() {
+    video.play();
+  });
+})();
+</script>
+
+</body>
+</html>
